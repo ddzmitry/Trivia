@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Trivia Game</title>
+    <!-- bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+    <style>
+    
+    </style>
+  </head>
+  
+ <body>
+   
+
+
+    
+    
+    <div class="container">
+              <div class="row answerRow   ">
+
+            
+
+
+
+      <div class=" col-md-3" ><div class="answers answer1 btn btn-default" id="el" data-value="0">  <span id="needle"    ></span> </div></div>
+      <div class=" col-md-3" ><div class="answers answer1 btn btn-default" id="el2" data-value="0"> <span id="needle2"  ></span> </div></div>
+      <div class=" col-md-3" ><div class="answers answer1 btn btn-default" id="el3" data-value="0"> <span id="needle3"  ></span> </div></div>
+      <div class=" col-md-3" ><div class="answers answer1 btn btn-default" id="el4" data-value="0"> <span id="needle4"  ></span> </div></div>
+
+
+                    <div class="row"> 
+
+
+
+                <div  class=" col-md-4 " ><img src="assets/img/wheel.png" class="  wheel img-responsive" alt="Cinque Terre"></div>
+               <div  class=" col-md-2 radio " ><img src="assets/img/radio.png" class="  img-responsive" alt="Cinque Terre"></div>
+                <div >  <p class="timeRemaining">Time: <span id="elapsedTime"></span></p></div>
+
+                      <div class="image-wrapper col-lg-offset-1 col-md-4">
+       <img src="assets/img/screen.png" class="  img-responsive screen" alt="sometext" />
+       <p class="questions" ></p>
+       <p id="wrong">Thats a wrong answer!  <br> </p>
+       <p id="correct">Absolutely correct!</p>
+       <p id="thisCorrectAnswer">The correct answer is: <span></span></p>
+       <p id="outOfTime">Time Up!</p>
+       <p id="gameTotalCorrect">Correct Answers: <span></span></p>
+       <p id="gameTotalWrong">Incorrect Answers: <span></span></p>
+       <p id="gameUnanswered">Unanswered Questions: <span></span></p>
+       <p id="gameDone">Trivia Game is over!  Here's your score:</p></div>
+       
+        <p id="pic"></p>
+
+        
+       </div>
+                             
+               </div>
+                                    
+                   <div class="row "> <div class=" col-md-offset-4 "> <img src="assets/img/gas.png" class=" pedal  img-responsive" alt="sometext" /></div></div>                
+              </div>    <!-- End Answers Row -->  
+    
+  </div>
+
+  <div id="startGame" ><button class=" startbtn col-md-3 col-md-push-5 text-center btn btn-custom">Start?</button></div>
+  <div id="restartGame"><button class="col-md-3 col-md-push-5 text-center btn btn-custom">Restart?</button></div>
+</div>
+
+
+
+</div>
+<audio id="audio1" src="assets/sounds/start.mp3" preload="auto"></audio>
+<audio id="audio2" src="assets/sounds/cut.mp3" preload="auto"></audio>
+<audio id="audio3" src="assets/sounds/engine.mp3" preload="auto"></audio>
+<audio id="audio4" src="assets/sounds/break.mp3" preload="auto"></audio>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+  
+</script>
+
+
+<script type="text/javascript" src ="assets/js/js.js">
+</script> 
+
+</body>
+</html>

@@ -1,0 +1,429 @@
+button {
+  height: 60px;
+  width: 150px;
+  margin: 50px;
+}
+p.timeRemaining {
+  color: white;
+  font-size: 20px;
+}
+.coursor {
+  cursor: url(../img/disc.png), auto;
+}
+
+.coursor2 {
+  cursor: url(../img/wrench.png), auto;
+}
+
+.coursor3 {
+  cursor: url(../img/carKey.png), auto;
+}
+
+.coursor4 {
+  cursor: url(../img/wheelsteer.png), auto;
+}
+
+.coursor5{
+  cursor: url(../img/speedometer.png), auto;
+}
+.timeText {
+  margin-left: 60px;
+}
+.innerImage {
+  height: 100px;
+  width: auto;
+  margin-left: 520px;
+  margin-top: -338px;
+}
+#outOfTime {
+  margin-top: 100px;
+}
+#gameDone {
+  margin-top: 20px;
+}
+#gameTotalCorrect {
+  margin-top: 61px;
+}
+#gameUnanswered {
+  margin-top: 158px;
+}
+#gameTotalWrong {
+  margin-top: 111px;
+}
+.image-wrapper {
+  position: relative;
+  width: 450px;
+}
+.image-wrapper p {
+  position: absolute;
+  left: 25;
+  top: 0;
+  padding: 10px;    /*border: 1px solid #FFF;*/
+  width: 218px;
+  color: #FFF;
+  margin: 5px;
+  margin-top: 25px;
+  margin-left: 40px;
+}
+body {
+  background-image: url(../img/back.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+.screen {
+  width: 450px;
+}
+.wheel {
+  transition: all .8s linear;
+  -o-transition: all .8s linear;
+  -moz-transition: all .8s linear;
+  -webkit-transition: all .8s linear;
+}
+.wheel:hover {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+.radio {
+  margin: 0;
+}
+.pedal {
+  margin-top: 25px;
+  width: 100px;
+}
+.radio:hover {
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  -o-transform: rotate(4deg);
+  transform: rotate(4deg);
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+.pedal:hover {
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  transform: rotate(10deg);
+  width: 90px;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+#wrong {
+  margin-top: 125px;
+}
+#correct {
+  margin-top: 80px;
+}
+#thisCorrectAnswer {
+  margin-top: 60px;
+}
+.btn-custom {
+  width: 200px;
+  height: 45px;
+  background-color: hsl(0, 0%, 16%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5b5b5b", endColorstr="#282828");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#5b5b5b), to(#282828));
+  background-image: -moz-linear-gradient(top, #5b5b5b, #282828);
+  background-image: -ms-linear-gradient(top, #5b5b5b, #282828);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5b5b5b), color-stop(100%, #282828));
+  background-image: -webkit-linear-gradient(top, #5b5b5b, #282828);
+  background-image: -o-linear-gradient(top, #5b5b5b, #282828);
+  background-image: linear-gradient(#5b5b5b, #282828);
+  border-color: #282828 #282828 hsl(0, 0%, 11%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
+  -webkit-font-smoothing: antialiased;
+}
+.inner {
+  color: red;
+}
+#el {
+        background: #4253F3; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(top,#F8F3F3, #837979); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top, #F8F3F3, #837979); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top, #F8F3F3, #837979); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom, #EBEBEB, #F44646); /* Standard syntax (must be last) */
+  border-radius: 200px 200px 0 0;
+  height: 100px;
+  margin: 50px auto 0;
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+  font-size: 14px;
+}
+#needle {
+  background: rgba(255, 80, 0, 0.7);
+  border-radius: 4px;
+  bottom: -4px;
+  box-shadow: 3px -1px 4px rgba(0, 0, 0, 0.4);
+  display: block;
+  height: 8px;
+  left: 10px;
+  position: absolute;
+  width: 90px;
+  transform-origin: 100% 4px;
+  transform: rotate(0deg);
+  transition: all 1s;
+}
+#el:hover #needle {
+  transform: rotate(180deg);
+}
+
+/*Second*/
+#el2 {
+  background: #4253F3; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(top,#5E5B5B, #837979); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top, #5E5B5B, #837979); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top, #5E5B5B, #837979); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom, #EDDADA, #837979); /* Standard syntax (must be last) */
+  border-radius: 200px 200px 0 0;
+  height: 100px;
+  margin: 50px auto 0;
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+  font-size: 14px;
+}
+#needle2 {
+  background: rgba(255, 80, 0, 0.7);
+  border-radius: 4px;
+  bottom: -4px;
+  box-shadow: 3px -1px 4px rgba(0, 0, 0, 0.4);
+  display: block;
+  height: 8px;
+  left: 10px;
+  position: absolute;
+  width: 90px;
+  transform-origin: 100% 4px;
+  transform: rotate(0deg);
+  transition: all 1s;
+}
+#el2:hover #needle2 {
+  transform: rotate(180deg);
+}
+
+/*third*/
+#el3 {
+    background: #4253F3; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(top,#80AEEC, #837979); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top, #80AEEC, #837979); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top, #80AEEC, #837979); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom, #80AEEC, #837979); /* Standard syntax (must be last) */
+  border-radius: 200px 200px 0 0;
+  height: 100px;
+  margin: 50px auto 0;
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+  font-size: 14px;
+}
+#needle3 {
+  background: rgba(255, 80, 0, 0.7);
+  border-radius: 4px;
+  bottom: -4px;
+  box-shadow: 3px -1px 4px rgba(0, 0, 0, 0.4);
+  display: block;
+  height: 8px;
+  left: 10px;
+  position: absolute;
+  width: 90px;
+  transform-origin: 100% 4px;
+  transform: rotate(0deg);
+  transition: all 1s;
+}
+#el3:hover #needle3 {
+  transform: rotate(180deg);
+}
+
+/*four*/
+#el4 {
+      background: #4253F3; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(top,#F1A82A, #837979); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top, #F1A82A, #837979); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top, #F1A82A, #837979); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom, #F1A82A, #837979); /* Standard syntax (must be last) */
+  border-radius: 200px 200px 0 0;
+  height: 100px;
+  margin: 50px auto 0;
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+  font-size: 14px;
+}
+#needle4 {
+  background: rgba(255, 80, 0, 0.7);
+  border-radius: 4px;
+  bottom: -4px;
+  box-shadow: 3px -1px 4px rgba(0, 0, 0, 0.4);
+  display: block;
+  height: 8px;
+  left: 10px;
+  position: absolute;
+  width: 90px;
+  transform-origin: 100% 4px;
+  transform: rotate(0deg);
+  transition: all 1s;
+}
+#el4:hover #needle4 {
+  transform: rotate(180deg);
+}
+
+/*Curved */
+.curved-container {
+  position: relative;
+  width: 8px;
+  margin: auto;
+  height: 207px;
+  transform: rotate(-400deg);
+  -moz-transform: rotate(-400deg);
+  -webkit-transform: rotate(-400deg);
+}
+.curved-container h2 {
+  border: none;
+}
+.curved-container span {
+  font: 26px;
+  font-family: 'Aldrich', sans-serif;
+  height: 200px;
+  position: absolute;
+  width: 20px;
+  left: 0;
+  top: 0;
+  letter-spacing: 0px;
+  transform-origin: right top;
+  -moz-transform-origin: bottom center;
+  -webkit-transform-origin: left center;
+}
+.char0 {
+  transform: rotate(6deg);
+  -moz-transform: rotate(6deg);
+  -webkit-transform: rotate(6deg);
+}
+.char1 {
+  transform: rotate(12deg);
+  -moz-transform: rotate(12deg);
+  -webkit-transform: rotate(12deg);
+}
+.char2 {
+  transform: rotate(18deg);
+  -moz-transform: rotate(18deg);
+  -webkit-transform: rotate(18deg);
+}
+.char3 {
+  transform: rotate(24deg);
+  -moz-transform: rotate(24deg);
+  -webkit-transform: rotate(24deg);
+}
+.char4 {
+  transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+}
+.char5 {
+  transform: rotate(36deg);
+  -moz-transform: rotate(36deg);
+  -webkit-transform: rotate(36deg);
+}
+.char6 {
+  transform: rotate(42deg);
+  -moz-transform: rotate(42deg);
+  -webkit-transform: rotate(42deg);
+}
+.char7 {
+  transform: rotate(48deg);
+  -moz-transform: rotate(48deg);
+  -webkit-transform: rotate(48deg);
+}
+.char8 {
+  transform: rotate(54deg);
+  -moz-transform: rotate(54deg);
+  -webkit-transform: rotate(54deg);
+}
+.char9 {
+  transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+}
+.char10 {
+  transform: rotate(66deg);
+  -moz-transform: rotate(66deg);
+  -webkit-transform: rotate(66deg);
+}
+.char11 {
+  transform: rotate(72deg);
+  -moz-transform: rotate(72deg);
+  -webkit-transform: rotate(72deg);
+}
+.char12 {
+  transform: rotate(78deg);
+  -moz-transform: rotate(78deg);
+  -webkit-transform: rotate(78deg);
+}
+.char13 {
+  transform: rotate(84deg);
+  -moz-transform: rotate(84deg);
+  -webkit-transform: rotate(84deg);
+}
+.char14 {
+  transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+.char15 {
+  transform: rotate(96deg);
+  -moz-transform: rotate(96deg);
+  -webkit-transform: rotate(96deg);
+}
+.char16 {
+  transform: rotate(102deg);
+  -moz-transform: rotate(102deg);
+  -webkit-transform: rotate(102deg);
+}
+.char17 {
+  transform: rotate(108deg);
+  -moz-transform: rotate(108deg);
+  -webkit-transform: rotate(108deg);
+}
+.char18 {
+  transform: rotate(114deg);
+  -moz-transform: rotate(114deg);
+  -webkit-transform: rotate(114deg);
+}
+.char19 {
+  transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+}
+.char20 {
+  transform: rotate(126deg);
+  -moz-transform: rotate(126deg);
+  -webkit-transform: rotate(126deg);
+}
+.char21 {
+  transform: rotate(132deg);
+  -moz-transform: rotate(132deg);
+  -webkit-transform: rotate(132deg);
+}
+.char22 {
+  transform: rotate(138deg);
+  -moz-transform: rotate(138deg);
+  -webkit-transform: rotate(138deg);
+}
+.char23 {
+  transform: rotate(144deg);
+  -moz-transform: rotate(144deg);
+  -webkit-transform: rotate(144deg);
+}
